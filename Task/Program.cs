@@ -17,6 +17,8 @@ bool IsValidValue(string checkingValue)
     return (checkingValue.Length > 0);
 }
 
+Console.Clear();
+Console.WriteLine("Программа выборки элементов длиной меньше либо равна 3 символа из введенного массива.");
 Console.Write("Задайте массив строк (через запятую): ");
 string getValue = Console.ReadLine();
 
@@ -47,6 +49,7 @@ if (isValid)
                 index++;
             }
         }
+        Console.Write("Результат: ");
         Console.WriteLine($"[{string.Join(", ", inputArray)}] -> [{string.Join(", ", outputArray)}].");
     }
     else
