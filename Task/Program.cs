@@ -4,22 +4,14 @@
 Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами. */
 
-/*Примеры:
-
-["hello", "2", "world", ":-)"] -> ["2", ":-)"]
-
-["1234", "1567", "-2", "computer science"] -> ["-2"]
-
-["Russia", "Denmark", "Kazan"] -> [] */
-
-
+// Метод создания массива строк из введенных данных.
 string[] GetArrayFromString(string value)
 {
     string[] array = value.Split(",", StringSplitOptions.RemoveEmptyEntries);
     return array;
 }
 
-
+// Метод исключения ввода пустого значения.
 bool IsValidValue(string checkingValue)
 {
     return (checkingValue.Length > 0);
@@ -27,7 +19,9 @@ bool IsValidValue(string checkingValue)
 
 Console.Write("Задайте массив строк (через запятую): ");
 string getValue = Console.ReadLine();
-int checkLen = 3;
+
+int checkLen = 3; // Условие выборки.
+
 bool isValid = IsValidValue(getValue);
 
 if (isValid)
