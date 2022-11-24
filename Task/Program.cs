@@ -18,7 +18,7 @@ bool IsValidValue(string checkingValue)
 }
 
 Console.Clear();
-Console.WriteLine("Программа выборки элементов длиной меньше либо равна 3 символа из введенного массива.");
+Console.WriteLine("Программа выборки элементов длиной, меньшей либо равной 3 символа, из введенного массива.");
 Console.Write("Задайте массив строк (через запятую): ");
 string getValue = Console.ReadLine();
 
